@@ -1,0 +1,85 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+#contato{
+    background-color: lightgray;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+h3{
+  padding: 45px;
+  text-align: center;
+}
+
+.form {
+  
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: black;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+  border-color: #EB3540;
+  box-shadow: 0 0 0 3px #f45e68;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+  background: #EB3540;
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus{
+  letter-spacing: 1px;
+  background: black;
+  color: white;
+}
+

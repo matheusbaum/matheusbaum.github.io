@@ -1,0 +1,310 @@
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+nav {
+    width: 50%;
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 16px;
+    transition: ease-in-out 0.3s;
+}
+
+a:hover {
+ color: black;
+}
+
+img {
+    max-width: 450px;
+    display: block;
+}
+
+.logo {
+    padding: 15px 0;
+}
+
+.barra {
+    width: 100%;
+    background: #747474;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: solid 2px #E9E9E9;
+}
+
+.barra-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.centralizador {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#inicio {
+    background: #E9E9E9;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+}
+
+.altura-ajuste{
+    width: 90%;
+}
+
+.ajustador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.apresentacao {
+    max-width: 741px;
+    color:black;
+}
+
+.descricao {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    grid-area: descricao;
+}
+
+.meu-nome {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;;
+}
+
+.linkedin {
+    width: 390px;
+    height: 75px;
+    background-color:#EB3540;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.linkedin a {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.link {
+    font-size:25px;
+    width:50%;
+    text-align: center;
+    padding: 12px 0 ;
+    transition: ease-in-out 0.3s;
+}
+
+.link:hover {
+    letter-spacing: 1px;
+    color: white;
+}
+
+.imagem {
+    width: 300px;
+    grid-area: imagem;
+}
+
+.imagem2 {
+    box-shadow: 50px -40px #EB3540;
+    border-radius: 8px;
+    position:relative;
+    animation: imagemAnimacao 2.1s infinite alternate-reverse linear;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width:1200px) {
+    
+    #inicio{
+        background: #E9E9E9;
+        height: auto;
+    }
+
+    .ajustador {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .imagem {
+        padding: 100px 0;
+    }
+
+    .apresentacao {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .linkedin {
+        width: 479px;
+        margin-top: 15px;
+    }
+
+    .esquerda {
+        margin-left: 15px;
+    }
+
+    .direita {
+        margin-right: 15px;
+    }
+
+}
+
+@media (max-width:950px) {
+    .imagem {
+        padding: 25px 0;
+    }
+
+    .altura-ajuste{
+        display: flex;
+        justify-content: center;
+    }
+
+    .organizador {
+        max-width: 300px;
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-areas:  
+        "imagem"
+        "descricao";
+        line-height: 35px;
+    }
+
+    #inicio {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagem {
+        display: flex;
+        justify-content: center;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+
+    .meu-nome {
+        font-size: 30px;
+    }
+
+    .esquerda, .direita {
+        margin: 0;
+    }
+
+    .logo {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .barra{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-centro{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .centralizador{
+        margin: 0;
+    }
+
+    .barra-conteiner {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
+    .barra-conteiner .logo{
+        width: 100%
+    }
+
+    .direita ul {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .direita ul a {
+        font-size: 35px;
+    }
+
+    .barra {
+        display: block;
+        position: fixed;
+        top: -100vh;
+        transition: ease 0.3s;
+    }
+
+    .close-menu-label::after {
+        content:'≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background:#747474; 
+        color: white;
+        font-size: 3rem;
+        line-height:3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.barra {
+        top: 0;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        display: block;
+        content: '✕';
+    }
+
+    .barra .barra-conteiner ul li a{
+        font-size: 25px;
+    }
+
+    .barra {
+        background: #747474;
+    }
+
+}

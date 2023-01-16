@@ -1,0 +1,144 @@
+#sobre-mim {
+    width: 100%;
+    background-color: white;
+}
+
+.ajustador-2 {
+    padding: 144px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 140px;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: black;
+}
+
+#tittle-s{
+    position: absolute;
+    top: -25px;
+    right: 357px;
+}
+
+.minha-foto {
+    box-shadow: -60px -50px #f74a55;
+    border-radius: 8px;
+    height: 368px;
+    position: relative;
+}
+
+.minha-foto-bg{
+    border-radius: 8px;
+    height: 368px;
+}
+
+.sobre-mim{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-mim p {
+    font-family: 'Poppins', sans-serif;
+    text-indent: 2rem;
+    font-size: 20px;
+    max-width: 610px;
+    color: black;
+}
+
+.sobre-mim a {
+    position: absolute;
+    bottom: -80px;
+    left: -395px;
+    font-size: 25px;
+    color: #EB3540;
+    display: inline;
+}
+
+.sobre-mim a:hover{
+    color: #f45e68;
+}
+
+.sobre-mim a img{
+    width: 30px;
+    position: absolute;
+    bottom: 4px;
+    left: 195px;
+}
+
+
+@media (max-width:1200px) {
+    .ajustador-2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #tittle-s{
+        position: static;
+    }
+
+    .minha-foto {
+        margin-right: 60px;
+    }
+
+    h2 {
+        font-size: 30px;
+        position: static;
+    }
+
+    .ajustador-2 p {
+        font-size: 15px;
+    }
+
+    .sobre-mim p {
+        text-indent: 0;
+    }
+
+    .sobre-mim a {
+        position: absolute;
+        bottom: -80px;
+        left: 210px;
+    }
+
+    .sobre-mim a img{
+        position: absolute;
+        bottom: 4px;
+        left: 195px;
+    }
+    
+}
+
+@media(max-width:950px){
+    .ajustador-2 {
+        max-width: 350px;
+        padding: 70px 30px;
+    }
+
+    h2 {
+        position: static;
+    }
+
+    .minha-foto {
+        margin-right: 0;
+    }
+
+    #tittle-s{
+        position: static;
+    }
+
+    .sobre-mim a {
+        position: absolute;
+        bottom: -40px;
+        left: 38px;
+    }
+
+    .sobre-mim a img{
+        position: absolute;
+        left: 195px;
+    }
+}
