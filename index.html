@@ -1,262 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <title>Matheus Baum</title>
-    <style>
-      html, body {
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Matheus Baum</title>
+  <style>
+    html,
+    body {
       overflow-x: hidden;
-      }
-    </style>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/svg/logo-vermelho.svg"s
-    />
-    <link href="/thanks.html">
-    <link rel="stylesheet" href="/assets/css/navegacao-inicio.css" />
-    <link rel="stylesheet" href="/assets/css/sobre-mim.css" />
-    <link rel="stylesheet" href="/assets/css/projetos.css" />
-    <link rel="stylesheet" href="/assets/css/skills.css" />
-    <link rel="stylesheet" href="/assets/css/footer.css" />
-    <link rel="stylesheet" href="/assets/css/contato.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body onload="typeWriter(fName);">
-    <div>
-      <input
-        id="close-menu"
-        class="close-menu"
-        type="checkbox"
-        aria-label="close-menu"
-        role="button"
-      />
-      <label
-        class="close-menu-label"
-        for="close-menu"
-        title="close menu"
-      ></label>
-      <div class="barra">
-        <div class="menu-centro">
-          <div class="barra-conteiner centralizador">
-            <div class="logo esquerda">
-              <a href="index.html"
-                ><img src="/assets/svg/logo-branco.svg" alt="logo"
-              /></a>
+    }
+  </style>
+  <link rel="icon" type="image/x-icon" href="/assets/svg/logo-vermelho.svg" s />
+  <link href="/thanks.html">
+  <link rel="stylesheet" href="/assets/css/navegacao-inicio.css" />
+  <link rel="stylesheet" href="/assets/css/sobre-mim.css" />
+  <link rel="stylesheet" href="/assets/css/projetos.css" />
+  <link rel="stylesheet" href="/assets/css/skills.css" />
+  <link rel="stylesheet" href="/assets/css/footer.css" />
+  <link rel="stylesheet" href="/assets/css/contato.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="typeWriter(fName);">
+  <div>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close-menu" role="button" />
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <div class="barra">
+      <div class="menu-centro">
+        <div class="barra-conteiner centralizador">
+          <div class="logo esquerda">
+            <a href="index.html"><img src="/assets/svg/logo-branco.svg" alt="logo" /></a>
+          </div>
+          <nav class="direita">
+            <ul onclick="getElementById('close-menu').checked=false;">
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre-mim">Sobre mim</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <section id="inicio">
+      <div class="altura-ajuste">
+        <div class="inicio centralizador">
+          <div class="ajustador organizador">
+            <div class="apresentacao">
+              <p class="descricao">
+                Olá, me chamo <br>
+                <strong><span style="display: inline" class="meu-nome">Matheus Baum.</span></strong>
+                <br>
+                Desenvolvedor e Analista de TI, estudante <br> apaixonado pela área da tecnologia.
+              </p>
+              <br />
+              <div class="linkedin">
+                <a href="https://www.linkedin.com/in/matheusbaum/" target="_blank" class="link">Linkedin</a>
+              </div>
             </div>
-            <nav class="direita">
-              <ul onclick="getElementById('close-menu').checked=false;">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
+            <div class="imagem">
+              <img class="imagem2" src="/assets/img/Img.jpg" alt="imagem-hardware" />
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <section id="inicio">
-        <div class="altura-ajuste">
-          <div class="inicio centralizador">
-            <div class="ajustador organizador">
-              <div class="apresentacao">
-                <p class="descricao">
-                  Olá, me chamo <br>
-                  <strong><span style="display: inline" class="meu-nome"
-                    >Matheus Baum.</span
-                  ></strong>
-                  <br>
-                  Desenvolvedor e Analista de TI, estudante <br> apaixonado pela área da tecnologia.
-                </p>
-                <br />
-                <div class="linkedin">
-                  <a
-                    href="https://www.linkedin.com/in/matheusbaum/"
-                    target="_blank"
-                    class="link"
-                    >Linkedin</a
-                  >
-                </div>
+    <section id="sobre-mim">
+      <div class="centralizador">
+        <div class="ajustador-2">
+          <div class="minha-foto">
+            <img class="minha-foto-bg" src="/assets/img/foto-matheuscomfundo.png" alt="minha-foto" />
+          </div>
+          <div class="sobre-mim">
+            <h2 id="tittle-s">Sobre mim</h2>
+            <br />
+            <p>
+              Me chamo Matheus Baum mais conhecido como (Baum) tenho 22 anos, atualmente trabalho como Analista de TI em uma empresa de games nacional, estou no 3º semestre cursando um tecnólogo de sistemas para internet.
+            </p>
+            <br />
+            <p>
+              Apaixonado pela área da tecnologia da informação sou um estudante autodidata, buscando sempre aprendizado e constante evolução para atingir meus objetivos de me tornar um profissional cada vez mais completo na área.
+            </p>
+            <div class="instagram-link">
+              <a href="https://www.instagram.com/matheusbaum_/?hl=pt-br" target="_blank">Meu Instagram</a>
+            </div>
+            <a href="https://www.instagram.com/matheusbaum_/?hl=pt-br" target="_blank"><img src="/assets/svg/mini-insta.svg" alt="svg-do-insta"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="centralizador">
+        <div class="skills-padding">
+          <h2>Skills</h2>
+          <h3> Aqui está algumas linguagens, ferramentas e competências que aprendi e ainda estou aprendendo ao longo de meu processo de aprendizagem. </h3>
+          <div class="skills-descricao">
+            <div class="conteiner-skills">
+              <div class="skill-box skill3 js-skill">
+                <img class="icones-habilidades" src="/assets/svg/js-icon.svg" alt="js-icon" />
               </div>
-              <div class="imagem">
-                <img
-                  class="imagem2"
-                  src="/assets/img/Img.jpg"
-                  alt="imagem-hardware"
-                />
+              <div class="skill-box skill2 python-skill">
+                <img class="icones-habilidades" src="/assets/svg/python.svg" alt="python-icon" />
+              </div>
+              <div class="skill-box skill3 mysql-skill">
+                <img class="icones-habilidades" src="/assets/svg/mysql.svg" alt="mysql-icon" />
+              </div>
+              <div class="skill-box skill4 tortoise-svn-skill">
+                <img class="icones-habilidades" src="/assets/svg/tortoise-svn.svg" alt="tortoise-svn-icon" />
+              </div>
+              <div class="skill-box skill5 unreal-skill">
+                <img class="icones-habilidades" src="/assets/svg/unreal.svg" alt="unreal-icon" />
+              </div>
+              <div class="skill-box skill6 infra-skill">
+                <img class="icones-habilidades" src="/assets/svg/infraestrutura.svg" alt="infra-icon" />
+              </div>
+              <div class="skill-box skill7 git-skill">
+                <img class="icones-habilidades" src="/assets/svg/git-icon.svg" alt="git-icon" />
+              </div>
+              <div class="skill-box skill8 github-skill">
+                <img class="icones-habilidades" src="/assets/svg/github-icon.svg" alt="github-icon" />
               </div>
             </div>
           </div>
         </div>
-      </section>
+    </section>
 
-      <section id="sobre-mim">
-        <div class="centralizador">
-          <div class="ajustador-2">
-            <div class="minha-foto">
-              <img
-                class="minha-foto-bg"
-                src="/assets/img/foto-matheuscomfundo.png"
-                alt="minha-foto"
-              />
+    <section id="projetos">
+      <div class="centralizador projetos">
+        <h2 class="project2">Projetos</h2>
+        <div class="projetos-itens">
+          <div class="pro">
+            <div class="breve">
+              <p>EM BREVE!!</p>
             </div>
-            <div class="sobre-mim">
-              <h2 id="tittle-s">Sobre mim</h2>
-              <br />
-              <p>
-                Me chamo Matheus Baum mais conhecido como (Baum) tenho 22 anos, atualmente trabalho como Analista de TI em uma empresa de games, estou no 3º semestre cursando um tecnólogo de sistemas para internet.
-              </p>
-              <br />
-              <p>
-                Tenho como principal objetivo me tornar um desenvolvedor, estou buscando conhecimento, construindo projetos, portfólio (como este) e adquirindo experiência para atingir as minhas metas.
-              </p>
-              <div class="instagram-link">
-                <a
-                  href="https://www.instagram.com/matheusbaum_/?hl=pt-br"
-                  target="_blank"
-                  >Meu Instagram</a>
-              </div>
-              <a href="https://www.instagram.com/matheusbaum_/?hl=pt-br" target="_blank"><img src="/assets/svg/mini-insta.svg" alt="svg-do-insta"></a>
+          </div>
+          <div class="pro">
+            <div class="breve">
+              <p>EM BREVE!!</p>
+            </div>
+          </div>
+          <div class="pro">
+            <div class="breve">
+              <p>EM BREVE!!</p>
             </div>
           </div>
         </div>
-      </section>
 
-      <section id="skills">
-        <div class="centralizador">
-          <div class="skills-padding">
-            <h2>Skills</h2>
-            <h3> Aqui está algumas linguagens e ferramentas que aprendi e ainda estou aprendendo ao longo de meu processo de aprendizagem. </h3>
-            <div class="skills-descricao">
-              <div class="conteiner-skills">
-                <div class="skill-box skill1 html-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/html-icon.svg"
-                    alt="html-icon"
-                  />
-                </div>
-                <div class="skill-box skill2 css-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/css-icon.svg"
-                    alt="css-icon"
-                  />
-                </div>
-                <div class="skill-box skill3 js-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/js-icon.svg"
-                    alt="js-icon"
-                  />
-                </div>
-                <div class="skill-box skill4 bootstrap-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/bootstrap-icon.svg"
-                    alt="bootstrap-icon"
-                  />
-                </div>
-                <div class="skill-box skill5 node-js-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/node-icon.svg"
-                    alt="node-js-icon"
-                  />
-                </div>
-                <div class="skill-box skill6 java-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/java-icon.svg"
-                    alt="github-icon"
-                  />
-                </div>
-                <div class="skill-box skill7 git-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/git-icon.svg"
-                    alt="git-icon"
-                  />
-                </div>
-                <div class="skill-box skill8 github-skill">
-                  <img
-                    class="icones-habilidades"
-                    src="/assets/svg/github-icon.svg"
-                    alt="github-icon"
-                  />
-                </div>
-            </div>
-          </div>
+        <div class="github-link">
+          <button>Ver mais</button>
+          <a href="https://github.com/matheusbaum" target="_blank">Meus repositórios no github</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section id="projetos">
-        <div class="centralizador projetos">
-          <h2 class="project2">Projetos</h2>
-          <div class="projetos-itens">
-            <div class="pro">
-              <div class="breve"><p>EM BREVE!!</p></div>
-            </div>
-            <div class="pro">
-              <div class="breve"><p>EM BREVE!!</p></div>
-            </div>
-            <div class="pro escondido">
-              <div class="breve"><p>EM BREVE!!</p></div>
-            </div>
-            <div class="pro escondido">
-              <div class="breve"><p>EM BREVE!!</p></div>
-            </div>
-          </div>
-
-          <div class="github-link">
-            <button>Ver mais</button>
-            <a
-              href="https://github.com/matheusbaum"
-              target="_blank"
-              >Meus repositórios no github</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="contato">
-        <h2>Contato</h2>
-        <h3>Se quiser pode me contactar, fique a vontade!!!</h3>
-        <form
-        action="https://formsubmit.co/baum.matheus@gmail.com"
-        method="POST"
-        class="form"
-        >
+    <section id="contato">
+      <h2>Contato</h2>
+      <h3>Se quiser pode me contactar, fique a vontade!!!</h3>
+      <form action="https://formsubmit.co/baum.matheus@gmail.com" method="POST" class="form">
         <input type="text" name="name" id="name" placeholder="Nome" required />
         <input type="email" name="email" id="email" placeholder="Email" required />
         <textarea name="message" id="message" placeholder="Sua Mensagem" required></textarea>
         <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value="https://matheusbaum.com/thanks.html"
-        />
+        <input type="hidden" name="_next" value="https://www.matheusbaum.com/thanks.html" />
         <button type="submit">Enviar</button>
       </form>
-      </div>
-      </section>
+  </div>
+  </section>
 
-      <footer>
-        <footer>
-          <div class="logo">
-              <img class="footer-logotipo" src="/assets/svg/logo-footer.svg" alt="logo-do-footer" />
-          </div>
-      </footer>
-  
+  <footer>
+    <footer>
+      <div class="logo">
+        <img class="footer-logotipo" src="/assets/svg/logo-footer.svg" alt="logo-do-footer" />
+      </div>
+    </footer>
+
     </div>
     <script src="./assets/js/scroll.js"></script>
     <script src="./assets/js/acao.js"></script>
-  </body>
+</body>
+
 </html>
