@@ -83,7 +83,7 @@
             <h2 id="tittle-s">Sobre mim</h2>
             <br />
             <p>
-              Me chamo Matheus Baum mais conhecido como (Baum) tenho 22 anos, atualmente trabalho como Analista de TI em uma empresa de games multinacional, estou no 3º semestre cursando um tecnólogo de sistemas para internet.
+              Me chamo Matheus Baum mais conhecido como (Baum) tenho 22 anos, atualmente trabalho como Analista de TI em uma empresa de games nacional, estou no 3º semestre cursando um tecnólogo de sistemas para internet.
             </p>
             <br />
             <p>
@@ -165,14 +165,15 @@
     <section id="contato">
       <h2>Contato</h2>
       <h3>Se quiser pode me contactar, fique a vontade!!!</h3>
-      <form action="https://formsubmit.co/baum.matheus@gmail.com" method="POST" class="form">
+      <form action="https://formsubmit.co/baum.matheus@gmail.com" method="POST" class="form" onsubmit="return handleFormSubmit(event)">
         <input type="text" name="name" id="name" placeholder="Nome" required />
         <input type="email" name="email" id="email" placeholder="Email" required />
         <textarea name="message" id="message" placeholder="Sua Mensagem" required></textarea>
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" />
-        <button type="submit" href="https://www.matheusbaum.com/thanks.html">Enviar</button>
+        <input type="hidden" name="_next" value="https://www.matheusbaum.com/thanks.html" />
+        <button type="submit">Enviar</button>
       </form>
+  
   </div>
   </section>
 
