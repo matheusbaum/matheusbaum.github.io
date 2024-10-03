@@ -1,118 +1,121 @@
+
 #projetos {
-  background-color: white;
+    background-color: white;
 }
 
 .projetos {
-  padding-top: 93px;
+    padding-top: 93px;
 }
 
-.projetos h2,
-.projetos a {
-  text-align: center;
+.projetos h2, .projetos a {
+    text-align: center;
 }
 
 .projetos h2 {
-  padding-bottom: 70px;
+    padding-bottom: 70px;
 }
 
+
 button {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  padding: 15px 110px;
-  border-radius: 8px;
-  cursor: pointer;
-  color: white;
-  background-color: #eb3540;
-  border: none;
-  transition: ease-in-out 0.3s;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 110px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #EB3540;
+    border: none;
+    transition: ease-in-out 0.3s;
 }
 
 button:hover {
-  background-color: #dd2834;
+    background-color: #dd2834;
 }
 
 .github-link {
-  color: black;
-  margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 93px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  gap: 35px;
+    color: black;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
 }
 
 .projetos a {
-  font-size: 20px;
-  color: black;
-  display: inline;
+    font-size: 20px;
+    color: black;
+    display: inline;
 }
 
-.projetos a:hover {
-  color: #eb3540;
+.projetos a:hover{
+    color: #EB3540;
 }
 
 .pro {
-  background-color: #c1c1c1;
-  height: 225px;
-  width: 400px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  overflow: hidden;
-  transition: ease-in-out 0.3s;
+    background-color: #C1C1C1;
+    height: 225px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
 }
 
 .pro div p {
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: #c4c4c4;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
 }
 
 .pro:hover {
-  letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 .pro div {
-  background-color: black;
-  width: 1000px;
-  text-align: center;
-  padding: 3% 0;
+    background-color: black;
+    width: 1000px;
+    text-align: center;
+    padding: 3% 0;
 }
 
 .escondido {
-  opacity: 0;
-  display: none;
-  transition: 1000ms;
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
 }
 
 .projetos-itens {
-  display: flex;
-  gap: 29.5px;
-  width: 100%;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
 }
 
-@media (max-width: 1200px) {
-  .projetos {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+@media (max-width:1200px) {
+  .projetos{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
   }
 
   #projetos {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
   }
 
   .projetos-itens {
-    flex-direction: column;
+      flex-direction: column;
   }
+
 }
 
 .div github-link a {
-  color: black;
+    color: black;
 }
